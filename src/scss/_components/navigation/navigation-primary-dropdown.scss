@@ -1,0 +1,25 @@
+.navigation-primary__top-link:hover > .navigation-primary-dropdown {
+  display: block;
+}
+.navigation-primary-dropdown {
+  display: none;
+  position: absolute;
+  background-color: $color-white;
+  top: 44px;
+  padding: 20px 10px 10px;
+  width: 250px;
+  left: -20px;
+  padding-left: 0;
+  border: 1px solid $color-neutral-light;
+  border-bottom: 5px solid $color-branding-primary;
+  li {
+    padding: 5px 20px;
+    a {
+      color: $color-black;
+      &:hover {
+        text-decoration: none;
+        color: $color-branding-primary;
+      }
+    }
+  }
+}

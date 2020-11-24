@@ -1,0 +1,29 @@
+.navigation-secondary {
+  padding-left: 0;
+  display: flex;
+  list-style: none;
+  margin: 20px 0;
+  &__link {
+    padding-left: 12px;
+    padding-right: 12px;
+    border-right: 1px solid $color-neutral-light;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      color: $color-black;
+      &:hover {
+        text-decoration: none;
+        color: $color-branding-primary;
+      }
+    }
+    img {
+      width: 18px;
+      margin-right: 5px;
+      padding-bottom: 2px;
+    }
+    &:last-of-type {
+      border-right: 0px;
+    }
+  }
+}
