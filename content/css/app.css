@@ -7228,7 +7228,8 @@ a.text-dark:hover, a.text-dark:focus {
       margin-right: 5px;
       padding-bottom: 2px; }
     .navigation-secondary__link:last-of-type {
-      border-right: 0px; }
+      border-right: 0px;
+      padding-right: 0; }
 
 .promo-bar-primary {
   background-color: #008035;
