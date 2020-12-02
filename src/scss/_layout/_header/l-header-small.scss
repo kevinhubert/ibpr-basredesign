@@ -1,0 +1,21 @@
+.l-header-small {
+  position: relative;
+  @include breakpoint($large) {
+    display: none;
+  }
+  padding: 10px;
+  &--top {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__navlogo {
+    display: flex;
+  }
+  &__icons {
+    display: flex;
+    align-items: center;
+    img {
+      margin-left: 5px;
+    }
+  }
+}

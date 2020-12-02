@@ -1,0 +1,75 @@
+// General Mobile Header
+
+// Mobile nav toggle
+.mobile-nav-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35px;
+  height: 26.25px;
+  margin: 0 15px 0 0;
+  position: relative;
+  top: 5px;
+  &__bar {
+    width: 100%;
+    height: 3px;
+    border-radius: 8px;
+    background: $color-branding-primary;
+    transition-property: all;
+    transition-duration: 0.5s;
+  }
+  &.active {
+    .mobile-nav-toggle__bar:nth-child(1) {
+      transform: translateY(11.5px) rotate(45deg);
+    }
+
+    .mobile-nav-toggle__bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    .mobile-nav-toggle__bar:nth-child(3) {
+      transform: translateY(-11.5px) rotate(-45deg);
+    }
+  }
+}
+
+// Top level navigation
+.mobile-nav-main-container {
+  height: calc(100% - 65px);
+}
+.mobile-nav-main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  &__link {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 15px;
+    border-bottom: 1px solid $color-neutral-light;
+    &:after {
+      content: ">";
+      display: table-cell;
+      color: $color-branding-primary;
+      font-weight: 900;
+      font-size: 18px;
+    }
+    a {
+      color: $color-black;
+    }
+  }
+}
+//Secondary / subnav
+.mobile-nav-secondary {
+  background-color: $color-white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 90vw;
+  z-index: 99;
+  &--active {
+    left: 0 !important;
+  }
+}

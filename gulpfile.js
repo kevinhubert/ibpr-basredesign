@@ -20,6 +20,11 @@ gulp.task('sass', function() {
     return gulp.src("src/scss/*.scss")
         .pipe(sass())
         .pipe(gulp.dest("content/css"))
+        .on('error', function (err) {
+            console.log(err.toString());
+
+            this.emit('end');
+        })
         .pipe(browserSync.stream());
 });
 

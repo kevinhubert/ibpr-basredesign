@@ -1,0 +1,13 @@
+.promo-bar-mobile {
+  background-color: $color-branding-primary;
+  height: 30px;
+  color: $color-white;
+  font-size: 12px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include breakpoint($large) {
+    display: none;
+  }
+}

@@ -1,0 +1,20 @@
+// RESPONSIVE CLASSES
+.l-header-large {
+  @include breakpoint($large);
+  @include breakpoint($small) {
+    display: none;
+  }
+  padding: 20px 0 0 0;
+  border-bottom: 1px solid $color-neutral-light;
+  &__navigation-upper {
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

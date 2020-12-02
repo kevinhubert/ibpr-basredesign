@@ -1,0 +1,15 @@
+.l-mobile-nav {
+  overflow: hidden;
+  position: absolute;
+  background-color: $color-white;
+  border-right: 1px solid $color-neutral-light;
+  top: 90px;
+  left: calc(-90vw + 25px);
+  width: calc(90vw - 25px);
+  height: calc(100vh - 90px);
+  transition-duration: 500ms;
+  &--active {
+    left: 0 !important;
+    transition-duration: 500ms;
+  }
+}
