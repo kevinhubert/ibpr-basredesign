@@ -1,0 +1,23 @@
+.tile-grid-full-image {
+  text-align: center;
+  &__tile {
+    height: 260px;
+    border: 1px solid $color-neutral-light;
+    transform: scale(1);
+    transition-duration: 150ms;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.05);
+      transition-duration: 150ms;
+    }
+    &--image {
+      img {
+        width: 100%;
+      }
+    }
+    &--title {
+      height: 50px;
+      line-height: 50px;
+    }
+  }
+}

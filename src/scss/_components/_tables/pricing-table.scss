@@ -1,0 +1,22 @@
+.pricing-table {
+  border: 1px solid $color-neutral-light;
+  text-align: center;
+  th {
+    padding: 25px;
+    background-color: $color-branding-primary;
+    color: $color-white;
+    border: 0;
+  }
+  td {
+    vertical-align: middle;
+  }
+  &__price {
+    &--new {
+      color: $color-branding-primary;
+      font-size: 20px;
+    }
+    &--old {
+      text-decoration: line-through;
+    }
+  }
+}

@@ -10,6 +10,7 @@
 @import "./_base/forms.scss";
 @import "./_base/buttons.scss";
 @import "./_base/lists.scss";
+@import "./_base/anchors.scss";
 
 // Layout Specific
 @import "./_layout/_header/l-header-large.scss";
@@ -31,3 +32,7 @@
 
 @import "./_components/header-sfs/header-sfs.scss";
 @import "./_components/_tiles/tile-grid.scss";
+@import "./_components/_tiles/tile-grid-full-image.scss";
+@import "./_components/_typography/headers.scss";
+@import "./_components/_tables/pricing-table.scss";
+@import "./_components/_tiles/image-banner.scss";
