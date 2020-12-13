@@ -11,3 +11,8 @@ $color-branding-tertiary: #007230;
 $color-neutral-light: #cccccc;
 $color-neutral-medium: #3c3c3c;
 $color-neutral-dark: #333333;
+
+// Overriding Bootstrap default variables
+$theme-colors: (
+  "primary": $color-branding-secondary,
+);

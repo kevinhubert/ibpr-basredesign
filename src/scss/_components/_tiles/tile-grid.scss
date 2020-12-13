@@ -1,0 +1,36 @@
+.tile-grid {
+  &__title {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  &__tile {
+    border: 1px solid $color-neutral-light;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 15px;
+    transform: scale(1);
+    transition-duration: 150ms;
+    cursor: pointer;
+    &:hover {
+      transition-duration: 150ms;
+      transform: scale(1.05);
+    }
+    &--title {
+      color: $color-branding-primary;
+      font-weight: 700;
+      text-align: left;
+      &:after {
+        float: right;
+        content: ">>";
+      }
+    }
+    &--image {
+      margin: 15px 0;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

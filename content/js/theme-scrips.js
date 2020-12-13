@@ -10,9 +10,9 @@
 
   // Second level of navigation on mobile
   const mobileNavMainLinks = document.querySelectorAll('.mobile-nav-main__link');
-  mobileNavMainLinks.forEach(link => link.addEventListener("click", function() {
-    this.lastElementChild.classList.add("mobile-nav-secondary--active");
-    console.log('clicking top level link')
+  mobileNavMainLinks.forEach(link => link.addEventListener("click", function(e) {
+    const secondaryNav = e.target.children[0];
+    secondaryNav.classList.add('mobile-nav-secondary--active');
   }))
 
   const backToTopNavigation = () => {

@@ -1,0 +1,10 @@
+.l-main-content-container {
+  padding-bottom: 50px;
+  @extend .container;
+  &__sidebar {
+    @extend .col-md-2;
+  }
+  &__content {
+    @extend .col-md-10;
+  }
+}

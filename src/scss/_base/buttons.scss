@@ -1,0 +1,6 @@
+.btn-primary {
+  @extend .btn;
+  border-radius: 0;
+  font-weight: 700;
+  padding: 0.5rem 1.75rem;
+}

@@ -1,0 +1,30 @@
+.vertical-nav {
+  &__title {
+    font-weight: 700;
+    color: $color-branding-primary;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  &__group {
+    &--title {
+      font-weight: 700;
+      padding-bottom: 0.25rem;
+    }
+    &--links {
+      ul {
+        li {
+          padding-bottom: 0.25rem;
+          &:last-of-type {
+            margin-bottom: 30px;
+          }
+        }
+      }
+      a {
+        color: $color-black;
+      }
+    }
+    select {
+      margin-bottom: 10px;
+    }
+  }
+}

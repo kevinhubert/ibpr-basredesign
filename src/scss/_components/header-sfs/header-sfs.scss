@@ -1,0 +1,47 @@
+.header-sfs {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  padding: 15px 0;
+  border-bottom: $color-neutral-light 1px solid;
+  // Dropdowns
+  &__options {
+    margin-right: 50px;
+    display: flex;
+    flex: flex-grow;
+    justify-content: space-between;
+    font-weight: 700;
+    > div {
+      margin-right: 15px;
+    }
+    &--qty {
+      max-width: 100px;
+      input {
+        max-width: 100px;
+      }
+    }
+  }
+  // Prices
+  &__pricing {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+    align-items: center;
+    font-weight: 700;
+    > div {
+      margin-right: 10px;
+    }
+    &--new {
+      font-size: 25px;
+      color: $color-branding-primary;
+    }
+    &--old {
+      text-decoration: line-through;
+    }
+    &--each {
+      font-size: 25px;
+    }
+  }
+}

@@ -48,6 +48,7 @@
     list-style: none;
     padding: 15px;
     border-bottom: 1px solid $color-neutral-light;
+    cursor:pointer;
     &:after {
       content: ">";
       display: table-cell;
@@ -69,7 +70,36 @@
   bottom: 0;
   left: 90vw;
   z-index: 99;
+  padding: 15px;
+  transition-duration: 500ms;
+  &__back-btn {
+    font-weight: 700;
+    color: $color-branding-primary;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $color-neutral-light;
+    &:before {
+      content: "<";
+      margin-right: 10px;
+    }
+  }
+  &__links {
+    padding: 15px;
+    &--title {
+      font-weight: 700;
+    }
+    &--nav {
+      ul {
+        padding-left: 15px;
+      }
+      li {
+        list-style: none;
+        padding: 5px 0;
+      }
+    }
+  }
   &--active {
     left: 0 !important;
+    right: -90vw !important;
+    transition-duration: 500ms;
   }
 }

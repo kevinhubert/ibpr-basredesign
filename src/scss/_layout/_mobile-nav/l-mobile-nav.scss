@@ -8,6 +8,7 @@
   width: calc(90vw - 25px);
   height: calc(100vh - 90px);
   transition-duration: 500ms;
+  z-index:999;
   &--active {
     left: 0 !important;
     transition-duration: 500ms;

@@ -14,7 +14,9 @@
       width: 30px;
     }
     &--title {
-      color: $color-branding-primary;
+      a {
+        color: $color-branding-primary;
+      }
       font-size: 12px;
     }
   }
